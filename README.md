@@ -1,27 +1,64 @@
 # Notification System
 
-## About the Notification Service
+## Problem Context
 
-The notification service automates user notifications, supporting multiple channels, personalization, priority handling, user preferences, analytics, and template management. It operates as an hourly scheduled job.
+You're reviewing a notification processing system that sends notifications to users via external APIs.
+The team reports performance and reliability issues under load but hasn't provided detailed metrics.
 
-## Problem Description and Current Issues
+**The Code:** See [NotificationProcessor.php](NotificationProcessor.php)
 
-The notification system is experiencing severe performance degradation, and multiple critical issues:
+---
 
-- **Extremely slow execution times** (taking hours to complete)
-- **Database deadlocks and table locking** (preventing concurrent operations)
-- **High CPU utilization** (server resources being exhausted)
-- **API timeout issues** (external service calls failing)
-- **Memory leaks** (process consuming excessive memory)
-- **Significant delays** in notification delivery for users
+## Your Task
 
-## What we expect
+Analyze the code and improve it. Specifically:
 
-- Clearly describe your approach and the reasoning behind
-- Refactor the code with significant performance improvements
-- Issues identified & Solutions implemented
-- Why these solutions address the root causes
-- Scalability considerations
-- Architecture recommendations for handling high-load scenarios
+1. **Identify** the critical issues affecting performance and reliability
+2. **Prioritize** what to fix first and explain why
+3. **Implement or design** solutions for the most critical problems
+4. **Document** your approach and trade-offs
 
-Good luck!
+**You may:**
+- Write working code for critical fixes
+- Use pseudocode/comments for less critical improvements
+- Ask clarifying questions during the coding phase
+- Look up syntax (we're not testing memorization)
+
+**You don't need:**
+- Complete implementation of all features
+- Working tests (explain your test strategy instead)
+- Production-ready error handling for every edge case
+
+## Suggested Approach
+
+This is **not mandatory** - choose your own path:
+
+1. **First 5 minutes:** Read the code, identify 3-5 critical issues
+2. **Next 20 minutes:** Focus on ONE critical fix with detailed implementation
+3. **Last 5 minutes:** Outline remaining improvements in comments
+
+OR
+
+1. **First 5 minutes:** Identify issues and prioritize
+2. **Next 15 minutes:** Write pseudocode/design for overall solution
+3. **Last 10 minutes:** Implement ONE piece in detail to show code quality
+
+
+## Deliverables
+
+By the end of the interview:
+
+1. **Modified code** with your improvements (working or pseudocode)
+2. **Comments** explaining your approach and reasoning
+3. **Brief write-up** (see section below)
+
+
+## Setup & Running
+
+### Prerequisites
+- PHP 7.4+ with PDO and curl extensions
+- MySQL 5.7+ or compatible database
+
+### Run
+```bash
+php [NotificationProcessor.php](http://_vscodecontentref_/0)
